@@ -1,3 +1,5 @@
+package heroku;
+
 import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,7 +46,7 @@ public class CheckboxesTest {
         // Navigate to https://moatazeldebsy.github.io/test-automation-practices/#/checkboxes
         // Verify Check All and Uncheck All
         WebDriver driver = new ChromeDriver();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // 10 seconds
         driver.get("https://moatazeldebsy.github.io/test-automation-practices/#/checkboxes");
         wait.until(ExpectedConditions.titleContains("Test Automation Practices"));
 
